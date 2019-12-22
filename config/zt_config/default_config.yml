@@ -1,0 +1,43 @@
+################################################################################
+# default_config.yml:
+#   Contains common config options for the Application
+#   (not needed to be stored in DB)
+#
+#   Source:   http://answerstop.org/question/93679/best-way-to-create-custom-config-options-for-my-rails-app
+#
+#   Loaded to ZT_CONFIG  in:  ./initializers/zt_load_config.rb
+#
+#   Add this file to .gitignore (?)
+#
+#   NB! DO NOT UPDATE THIS FILE FOR DEBUG - use run_config.rb instead
+#
+#   11.10.2016  ZT
+#   30.08.2017  'access_restricted' key is added
+#   22.12.2019  Fixed syntax issue (Defaults: &defaults)
+################################################################################
+Defaults: &defaults
+  debug:
+    status:           false
+    path:             ''
+
+  mail:
+    bcc:              zt@mail.ru
+    path:             public/mail/attachments
+
+  multilingual:
+    status:           true
+
+  access_restricted:  false
+  
+development:
+  <<: *defaults
+
+  debug:
+    status:           true
+    path:             log/debug.log
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

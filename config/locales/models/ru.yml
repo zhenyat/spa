@@ -1,0 +1,19 @@
+ru:
+  activerecord:
+    models:
+      entry:
+        one:                    Запись
+        other:                  Записи
+      sample:
+        one:                    Пример
+        other:                  Примеры
+
+    attributes:
+      entry:
+        de:                 По-немецки
+        en:                 На английском
+        ru:                 На русском
+      sample:
+        de:                 По-немецки
+        en:                 На английском
+        ru:                 На русском

@@ -1,0 +1,19 @@
+de:
+  activerecord:
+    models:
+      entry:
+        one:                    Entry
+        other:                  Entries
+      sample:
+        one:                    Sample
+        other:                  Samples
+
+    attributes:
+      entry:
+        de:                 In German
+        en:                 In English
+        ru:                 In Russian
+      sample:
+        de:                 In German
+        en:                 In English
+        ru:                 In Russian
